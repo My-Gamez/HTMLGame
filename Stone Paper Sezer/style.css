@@ -109,6 +109,7 @@ body{
         height: 50px;
     }
     #container img{
+        position:relative;
         top:2vh;
     }
 }
