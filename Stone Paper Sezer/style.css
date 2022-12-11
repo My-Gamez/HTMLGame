@@ -1,0 +1,111 @@
+*{
+    margin: 0vh;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(aqua, white);
+    width: 99vw;
+    height: 98vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+#container img{
+    position: relative;
+    width: 10vw;
+    animation: ani 2s infinite;
+}
+#container img:hover{
+    width: 50vw;
+    transition: 1s all;
+}
+@keyframes ani{
+    0%{top: 3px;}
+    50%{top: 0;}
+    100%{top: 3px;}
+}
+
+#choose{
+    margin: 2vh;
+}
+#imgcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#imgcon #stone{
+    background-image: url("image/stone.png");
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 3vw;
+    border: 3px solid black;
+    border-radius: 30%;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+#imgcon #paper{
+    background-image: url("image/paper.png");
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 3vw;
+    border: 3px solid black;
+    border-radius: 30%;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+#imgcon #sezer{
+    background-image: url("image/sezer.png");
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 3vw;
+    border: 3px solid black;
+    border-radius: 30%;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+#imgcon #stone:hover{
+    border-radius: 50%;
+    transition: 1s all;
+}
+#imgcon #paper:hover{
+    border-radius: 50%;
+    transition: 1s all;
+}
+#imgcon #sezer:hover{
+    border-radius: 50%;
+    transition: 1s all;
+}
+#winlose{
+    text-shadow: 5px black;
+}
+@media screen and (max-width:600px){
+    #imgcon{
+        flex-direction: column;
+    }
+    #imgcon #stone{
+        width: 50px;
+        height: 50px;
+    }
+    #imgcon #paper{
+        width: 50px;
+        height: 50px;
+    }
+    #imgcon #sezer{
+        width: 50px;
+        height: 50px;
+    }
+}
