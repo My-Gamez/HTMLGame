@@ -177,5 +177,5 @@ document.onkeydown = function(e){
 }
 
 function replay(){
-    window.location.href = 'http://127.0.0.1:5500/index.html';
+    window.location.href = 'https://my-gamez.github.io/HTMLGame/Space%20battle/index.html';
 }
