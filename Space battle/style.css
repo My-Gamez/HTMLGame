@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#canvas{
+    width: 1350px;
+    height: 600px;
+    background-color: bisque;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#score{
+    position: absolute;
+    top: 20px;
+    left: 580px;
+    color: white;
+    text-shadow: 1px 1.5px black;
+}
+#status{
+    position: absolute;
+    top: 20px;
+    left: 1100px;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1.5px black;
+}
+#status img{
+    position: absolute;
+    width: 100px;
+    top: 20px;
+    left: 10px;
+}
+#status #print{
+    position: relative;
+    left: 130px;
+}
+#butt{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    background-color: rgb(2, 204, 2);
+    border-radius: 10px;
+    border: 3px solid green;
+    color: black;
+    padding: 10px;
+    display: none;
+}
+#butt:hover{
+    box-shadow: 0 0 10px rgb(5, 243, 5);
+}
+#gameOver{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(2, 2, 119);
+    font-size: 6em;
+    display: none;
+    text-shadow: 0 0 10px white;
+}
+#reason{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(2, 2, 119);
+    padding: 15px;
+    text-shadow: 0 0 10px white;
+}
