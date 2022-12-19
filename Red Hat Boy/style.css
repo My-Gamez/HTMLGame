@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#canvas{
+    background-color: aqua;
+}
+#gameover{
+    display: none;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    transform: rotate(90deg);
+    border: 2px solid black;
+    color: black;
+    text-shadow: 1px 2px white;
+}
+#score{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    transform: rotate(90deg);
+    text-shadow: 0.5px 0.5px white;
+}
+#replay{
+    display: none;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    transform: rotate(90deg);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+#replay img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
