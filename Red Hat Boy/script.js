@@ -34,7 +34,7 @@ function animate() {
 
     //Background
     ctx.drawImage(bg, x, y, 830, 1800);
-    if(y <= -30)y=0;
+    if(y <= -900)y=0;
     else y-=2;
 
     //Character
