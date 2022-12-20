@@ -33,7 +33,7 @@ function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     //Background
-    ctx.drawImage(bg, x, y, 375, 1222);
+    ctx.drawImage(bg, x, y, 830, 1800);
     if(y <= -30)y=0;
     else y-=2;
 
