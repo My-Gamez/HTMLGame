@@ -58,7 +58,7 @@ function animate() {
 
     //Coin
     ctx.drawImage(coin, csx*173, csy*121, 163, 121, cx, cy, 50, 50);
-    if(cy < -10)cy = 611;
+    if(cy < -10)cy = 800;
     else cy-=3;
     if(frame%5==0){
         if(csx<9){
@@ -70,14 +70,14 @@ function animate() {
     if(bx < cx+25 && by < cy+25 && cx < bx+50 && cy < by+50){
         cn++;
         document.getElementById('coin').innerText = "Coin: "+cn;
-        cy = 611;
+        cy = 800;
         score+=100;
         coinm.play();
     }
     //Man
     ctx.drawImage(man, 0, m*128, 188, 128, mx, my, 120, 120);
     if(my <= -100){
-        my = 631;
+        my = 800;
         ms+=0.4;
     }else{
         my-=ms;
